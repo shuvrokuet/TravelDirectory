@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:orientation="vertical"
+       android:gravity="center_horizontal"
+       >
+       <TextView
+           android:id="@+id/start"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceLarge"
+           android:textStyle="bold"
+           android:text="User Login and Registration"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="20dp"
+           />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username" />
+
+       <EditText
+           android:id="@+id/username"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10" />
+
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <requestFocus />
+
+       <Button
+           android:id="@+id/login"
+           android:layout_width="250dp"
+           android:layout_height="wrap_content"
+           android:text="Login" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:text="Register" />
+
+       <TextView android:text="Login With Facebook"
+
+           android:id="@+id/btnLogin"
+           android:padding="10dp"
+           android:layout_centerInParent="true"
+           android:background="#494949"
+           android:textColor="#fff"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <com.facebook.login.widget.LoginButton
+           android:visibility="gone"
+           android:id="@+id/login_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="30dp" />
+
+
+
+   </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
